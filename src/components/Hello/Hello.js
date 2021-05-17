@@ -7,13 +7,13 @@ const Hello = () => {
   return (
     <HelloContainer>
       <Presentation>
-        <h1> Olá, aqui é o Ricardo! </h1>
-        <img src={CodeImage} />
+        <h1 className="name"> Olá, aqui é o Ricardo! </h1>
+        <img src={DeveloperImage} className="personIcon" alt="" />
       </Presentation>
 
       <WorkPosition>
-        <img src={DeveloperImage} />
-        <h1> Sou desenvolvedor frontend júnior </h1>
+        <img src={CodeImage} className="codeIcon" alt="" />
+        <h1 className="occupation"> Sou desenvolvedor frontend júnior. </h1>
       </WorkPosition>
     </HelloContainer>
   )

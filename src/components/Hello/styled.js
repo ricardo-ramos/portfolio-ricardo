@@ -13,24 +13,25 @@ export const Presentation = styled.div`
   display: flex;
   gap: 28px;
 
-  h1 {
+  .name {
+    align-self: center;
     font-family: "Bebas Neue";
     font-size: 52px;
     letter-spacing: 2px;
 
-    @media (max-width: 440px) {
-      font-size: 32px;
+    @media screen and (max-width: 440px) {
+      font-size: 36px;
     }
   }
 
-  img {
-    width: 4em;
+  .personIcon {
+    width: 6em;
   }
 
-  @media (max-width: 550px) {
+  @media screen and (max-width: 550px) {
     align-items: center;
     flex-direction: column;
-    gap: 0;
+    gap: 16px;
   }
 `
 
@@ -38,20 +39,24 @@ export const WorkPosition = styled.div`
   display: flex;
   gap: 32px;
 
-  img {
-    width: 8em;
+  .codeIcon {
+    width: 4em;
   }
 
-  h1 {
+  .occupation {
     align-self: center;
     font-family: "Changa";
     font-size: 28px;
     text-align: center;
+
+    @media screen and (max-width: 440px) {
+      font-size: 20px;
+    }
   }
 
-  @media (max-width: 550px) {
+  @media screen and (max-width: 550px) {
     align-items: center;
     flex-direction: column-reverse;
-    gap: 0;
+    gap: 16px;
   }
 `

@@ -6,4 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  p {
+    font-family: "Roboto";
+    line-height: 1.4;
+  }
 `
